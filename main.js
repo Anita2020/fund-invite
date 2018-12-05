@@ -27,9 +27,8 @@ $(document).ready(function() {
                 var name = $.trim(document.getElementById('name').value);
                 var friendName = $.trim(document.getElementById('friendName').value);
                 var phone = $.trim(document.getElementById('phone').value);
-                var email = $.trim(document.getElementById('email').value);
 
-                var postData = 'name=' + name + '&friendName=' + friendName + '&phone=' + phone + email + '&email';
+                var postData = 'name=' + name + '&friendName=' + friendName + '&phone=' + phone;
 
                 // Send the Data to the Processor for processing
                 $.ajax({
@@ -38,9 +37,9 @@ $(document).ready(function() {
                     data: postData,
                     success: function(result) {
                         if(result == 'success') {
-                            swal("Successfully Invited", "Your friend has been invited to AWLO'S 2018 inducion /Fundraising Event", "success");
+                            swal("Successfully Invited", "Your friend has been invited to AWLO's 2018 Induction/Fundraising Event", "success");
                             setTimeout(function(){
-                                window.location = 'https.awlo.org/fundraising/invite'
+                                window.location = 'https://awlo.org'
                             }, 3000);
                         }
                     }
