@@ -22,6 +22,11 @@ $(document).ready(function() {
     //When form is submitted, grab data
     $('form').submit(function (event) {
                 event.preventDefault();
+                 // Make the invite button load
+                 $('button').removeClass('btn-danger');
+                 $('button').toggleClass('btn-primary');
+                $('button').html('Loading <span class="spinner"></span><i class="fa fa-spinner fa-spin"></i></span>');
+
 
                 // put form data into variables
                 var name = $.trim(document.getElementById('name').value);

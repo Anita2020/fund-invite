@@ -9,9 +9,7 @@ $phone = $_POST['phone'];
 // prepare the parameters
 $url = 'https://www.bulksmsnigeria.com/api/v1/sms/create';
 $from = $name;
-$body = "Hi " . $friendName . ". " . "Here is an opportunity for you to be a part of the success story of our future leaders.I am inviting you to the African Women in Leadership Organisation Induction and Fundraising Dinner.I hope to see you there.Click on this link to get your own special invitation.
-Venue:D'Podium International Event Center No31b Aromire Road along Adeniyi Jones,Ikeja.
-Time:5.30pm";
+$body = "Hi " . $friendName . ". " . "Here is an opportunity for you to be a part of the success story of our future leaders. I am inviting you to the African Women in Leadership Organisation Induction and Fundraising Dinner. Venue: D'Podium International Event Center No31B Aromire, Off Adeniyi Jones Avenue, Ikeja. Time: 5.30pm. Click on this link to get your own ticket: https://awlo.org/fundraisingdinner. I hope to see you there.";
 $myvars = 'api_token=' . $smstoken . '&from=' . $from . '&to=' . $phone .  '&body=' . $body;
 //start CURL
 // create curl resource
